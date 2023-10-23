@@ -1,0 +1,46 @@
+body{
+    background-color: #{$color-bg};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-login{
+    &__title{
+        color: var(--color-font);
+        font-size: var(--h3-font-size);
+        margin: 0;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        gap: 9px;
+    }
+    &__input{
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: 1px solid #D4D6D9;
+        font-size: 14px;
+        color: #697a8d;
+    }
+    &__button {
+        width: 250px;
+        padding: 10px;
+        color: white;
+        font-weight: 700;
+        font-size: 14px;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 5px;
+        background: var(--color-primary);
+        border: none;
+        cursor: pointer;
+
+        &:hover{
+            background: var(--color-hover);
+            color: white;
+        }
+    }
+}

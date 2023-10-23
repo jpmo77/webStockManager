@@ -1,0 +1,57 @@
+$max-width:1200px;
+
+$breakpoints: (
+    mobile: 450px,
+    tablet: 768px,
+    laptop: 1200px
+);
+
+$font-family: 'Poppins', sans-serif;
+
+$color-white: #FFFFFF;
+$color-primary: #6166f2;
+$color-hover: rgb(89, 92, 235);
+$color-bg: #F0F2F4;
+$color-font: #566a7f;
+$color-border: #CCC;
+
+$fz-h1: 3rem;
+$fz-h2: 2.5rem;
+$fz-h3: 2rem;
+$fz-h4: 1.5rem;
+$fz-bigger: 1.25rem;
+$fz-normal: 1rem;
+$fz-small: 0.8rem;
+
+// Paleta de colores
+:root{
+    --font-family: #{$font-family};
+    --color-primary:  #{$color-primary};
+    --color-font:  #{$color-font};
+    --color-hover:  #{$color-hover};
+}
+
+// Variables de Apilamiento (z-index)
+:root{
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+// Variables de Tipografía
+:root{
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --body-font-size: .9rem;
+    --small-font-size: .75rem;
+    @include from(tablet) {
+        --h1-font-size: 2.5rem;
+        --h2-font-size: 1.75rem;
+        --h3-font-size: 1.5rem;
+        --body-font-size: 1rem;
+        --small-font-size: .8rem;
+    }
+}
